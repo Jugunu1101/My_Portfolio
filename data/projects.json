@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Network Scanning & Vulnerability Assessment",
+    "category": "Offensive Security",
+    "icon": "fa-solid fa-radar",
+    "color": "from-emerald-500/15 to-teal-500/10",
+    "badge": "Nmap + Lab",
+    "badgeColor": "text-emerald-500",
+    "bullets": [
+      "Performed network scanning using Nmap to identify open ports and running services.",
+      "Analyzed potential vulnerabilities in a controlled environment."
+    ],
+    "tags": ["NMAP", "NETWORKING", "VULNERABILITY"],
+    "github": "https://github.com/Jugunu1101",
+    "image": ""
+  },
+  {
+    "title": "Password Security Testing",
+    "category": "Cryptography & Auth",
+    "icon": "fa-solid fa-lock",
+    "color": "from-blue-500/15 to-indigo-500/10",
+    "badge": "Hydra + JTR",
+    "badgeColor": "text-blue-500",
+    "bullets": [
+      "Used Hydra and John the Ripper to test password strength.",
+      "Performed brute-force testing in a controlled, isolated environment."
+    ],
+    "tags": ["HYDRA", "JOHN THE RIPPER", "SECURITY"],
+    "github": "https://github.com/Jugunu1101",
+    "image": ""
+  },
+  {
+    "title": "Network Traffic Analysis",
+    "category": "Network Forensics",
+    "icon": "fa-solid fa-wifi",
+    "color": "from-violet-500/15 to-purple-500/10",
+    "badge": "Wireshark",
+    "badgeColor": "text-violet-500",
+    "bullets": [
+      "Captured and inspected network packets using Wireshark.",
+      "Identified suspicious traffic patterns and common protocol behavior."
+    ],
+    "tags": ["WIRESHARK", "FORENSICS", "PACKETS"],
+    "github": "https://github.com/Jugunu1101",
+    "image": ""
+  },
+  {
+    "title": "Ai Lab Management System",
+    "category": "Web Devlopement",
+    "icon": "fa-solid fa-web",
+    "color": "from-violet-500/15 to-purple-500/10",
+    "badge": "web ",
+    "badgeColor": "text-violet-500",
+    "bullets": [
+      "Developed an AI-powered platform to monitor student coding performance and identify weak programming concepts.",
+      "Implemented automated code analysis, AI-generated quizzes personalized learning paths, and instructor analytics."
+    ],
+    "tags": ["AI", "Web3"],
+    "github": "https://github.com/Jugunu1101/Ai-Lab-Management-System",
+    "image": ""
+  }
+]

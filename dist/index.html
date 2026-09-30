@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Negi | Cybersecurity Enthusiast</title>
+    <meta name="description" content="Nitin Negi — Cybersecurity Enthusiast & BCA Student at MIET Kumaon. Passionate about network security, ethical hacking, and building secure systems.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        cyber: { DEFAULT: '#00ff41', dark: '#00cc33', dim: '#00aa2a', glow: 'rgba(0,255,65,0.15)' },
+                        terminal: '#0a0e14',
+                        surface: '#111820',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-cyber': 'pulseCyber 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-16px)' } },
+                        pulseCyber: { '0%,100%': { opacity: '1' }, '50%': { opacity: '0.5' } },
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#0a0e14}::-webkit-scrollbar-thumb{background:#00ff41;border-radius:3px}html:not(.dark) ::-webkit-scrollbar-track{background:#f1f5f9}html:not(.dark) ::-webkit-scrollbar-thumb{background:#0ea5e9}#loading-screen{z-index:99999;background:#000;flex-direction:column;justify-content:center;align-items:center;transition:opacity .6s,visibility .6s;display:flex;position:fixed;inset:0}#loading-screen.hide{opacity:0;visibility:hidden}.loader-ring{border:3px solid #0000;border-top-color:#00ff41;border-radius:50%;width:60px;height:60px;animation:1s linear infinite spin}.loader-ring:after{content:"";border:3px solid #0000;border-top-color:#0c3;border-radius:50%;animation:1.5s linear infinite reverse spin;position:absolute;inset:4px}@keyframes spin{to{transform:rotate(360deg)}}#cursor-glow{pointer-events:none;z-index:9998;opacity:0;background:radial-gradient(circle,#00ff4112 0%,#0000 70%);border-radius:50%;width:350px;height:350px;transition:opacity .3s;position:fixed;transform:translate(-50%,-50%)}#cursor-glow.active{opacity:1}.typewriter-cursor{vertical-align:text-bottom;background:#00ff41;width:3px;height:1.1em;margin-left:3px;animation:.75s step-end infinite blink-c;display:inline-block}@keyframes blink-c{0%,to{opacity:1}50%{opacity:0}}.reveal{opacity:0;transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1);transform:translateY(35px)}.reveal.active{opacity:1;transform:translateY(0)}.skill-fill{border-radius:9999px;width:0%;height:100%;transition:width 1.4s cubic-bezier(.16,1,.3,1)}.tilt-card{transform-style:preserve-3d;transition:transform .1s}#back-to-top{z-index:9990;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;position:fixed;bottom:28px;right:28px;transform:translateY(16px)}#back-to-top.visible{opacity:1;pointer-events:auto;transform:translateY(0)}#hero-canvas{z-index:0;width:100%;height:100%;position:absolute;top:0;left:0}.scan-lines:after{content:"";pointer-events:none;z-index:1;background:repeating-linear-gradient(0deg,#0000,#0000 2px,#00ff4105 2px 4px);position:absolute;inset:0}.glitch{display:inline-block;position:relative}.glitch:before,.glitch:after{content:attr(data-text);opacity:0;width:100%;height:100%;position:absolute;top:0;left:0}.glitch:hover:before{color:#ff0040;opacity:.7;animation:.3s linear g1}.glitch:hover:after{color:#00d4ff;opacity:.7;animation:.3s linear g2}@keyframes g1{0%{transform:translate(0)}20%{transform:translate(-3px,2px)}40%{transform:translate(3px,-1px)}60%{transform:translate(-2px,1px)}80%{transform:translate(2px,-2px)}to{transform:translate(0)}}@keyframes g2{0%{transform:translate(0)}20%{transform:translate(3px,-2px)}40%{transform:translate(-3px,1px)}60%{transform:translate(2px,-1px)}80%{transform:translate(-2px,2px)}to{transform:translate(0)}}.mobile-drawer{opacity:0;pointer-events:none;transition:transform .35s cubic-bezier(.16,1,.3,1),opacity .35s;transform:translateY(-110%)}.mobile-drawer.open{opacity:1;pointer-events:auto;transform:translateY(0)}html:not(.dark) #cursor-glow{background:radial-gradient(circle,#0ea5e90f 0%,#0000 70%)}@media print{body *{visibility:hidden}#resume-printable,#resume-printable *{visibility:visible}#resume-printable{width:100%;position:absolute;top:0;left:0}}</style>
+</head>
+
+<body class="bg-zinc-50 text-zinc-900 dark:bg-terminal dark:text-zinc-100 font-sans antialiased selection:bg-cyber/20 selection:text-cyber transition-colors duration-300">
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="relative loader-ring mb-6"></div>
+        <p class="font-mono text-cyber text-sm tracking-widest animate-pulse-cyber">INITIALIZING SECURE CONNECTION...</p>
+        <p class="font-mono text-zinc-600 text-xs mt-2 tracking-wider">nitin@kali:~$</p>
+    </div>
+
+    <!-- Cursor Glow (desktop only) -->
+    <div id="cursor-glow"></div>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="w-11 h-11 rounded-xl bg-cyber text-terminal flex items-center justify-center shadow-lg shadow-cyber/25 hover:shadow-cyber/40 hover:-translate-y-0.5 transition-all" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up text-sm font-bold"></i>
+    </button>
+
+    <!-- ══════════ NAVBAR ══════════ -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-white/85 dark:bg-terminal/90 backdrop-blur-xl border-b border-zinc-200/80 dark:border-zinc-800/50 shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-[72px] flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2.5 group">
+                <div class="w-9 h-9 rounded-xl bg-cyber/10 border border-cyber/20 flex items-center justify-center text-cyber font-mono font-bold text-sm group-hover:bg-cyber group-hover:text-terminal transition-all duration-300 shadow-sm">
+                    NN
+                </div>
+                <span class="font-heading font-extrabold tracking-tight text-xl">
+                    Nitin<span class="text-cyber">.</span>
+                </span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#home" class="nav-link text-sm font-medium hover:text-cyber transition-colors relative group py-2" data-section="home">
+                    Home <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyber transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#about" class="nav-link text-sm font-medium hover:text-cyber transition-colors relative group py-2" data-section="about">
+                    About <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyber transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#skills" class="nav-link text-sm font-medium hover:text-cyber transition-colors relative group py-2" data-section="skills">
+                    Skills <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyber transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#projects" class="nav-link text-sm font-medium hover:text-cyber transition-colors relative group py-2" data-section="projects">
+                    Projects <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyber transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#education" class="nav-link text-sm font-medium hover:text-cyber transition-colors relative group py-2" data-section="education">
+                    Education <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyber transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#contact" class="nav-link text-sm font-medium hover:text-cyber transition-colors relative group py-2" data-section="contact">
+                    Contact <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyber transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a href="assets/Nitin_Negi_Resume.pdf" target="_blank" class="px-4 py-2 bg-cyber/10 hover:bg-cyber text-cyber hover:text-terminal font-semibold text-xs rounded-xl border border-cyber/20 transition-all duration-300 flex items-center gap-1.5 font-mono">
+                    <i class="fa-solid fa-file-shield"></i> Resume
+                </a>
+
+                <div class="w-px h-6 bg-zinc-200 dark:bg-zinc-800"></div>
+
+                <button id="theme-toggle" class="w-10 h-10 rounded-xl bg-zinc-100 dark:bg-surface border border-zinc-200 dark:border-zinc-800 flex items-center justify-center hover:border-cyber text-zinc-600 dark:text-zinc-400 hover:text-cyber transition-all duration-300" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon text-sm" id="theme-icon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="flex md:hidden items-center gap-2.5">
+                <button id="theme-toggle-mobile" class="w-10 h-10 rounded-xl bg-zinc-100 dark:bg-surface border border-zinc-200 dark:border-zinc-700 flex items-center justify-center text-zinc-600 dark:text-zinc-400 hover:text-cyber transition-all" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon text-sm" id="theme-icon-mobile"></i>
+                </button>
+                <button id="hamburger-btn" class="w-10 h-10 rounded-xl bg-zinc-100 dark:bg-surface border border-zinc-200 dark:border-zinc-700 flex items-center justify-center text-zinc-700 dark:text-zinc-300 hover:text-cyber transition-all" aria-label="Menu">
+                    <i class="fa-solid fa-bars text-sm" id="hamburger-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div class="mobile-drawer md:hidden bg-white dark:bg-terminal border-b border-zinc-200 dark:border-zinc-800 px-6 py-5 shadow-xl" id="mobile-drawer">
+            <div class="flex flex-col gap-3">
+                <a href="#home" class="mobile-nav-link font-mono text-sm py-2.5 border-b border-zinc-100 dark:border-zinc-800/50 hover:text-cyber transition-colors">~/home</a>
+                <a href="#about" class="mobile-nav-link font-mono text-sm py-2.5 border-b border-zinc-100 dark:border-zinc-800/50 hover:text-cyber transition-colors">~/about</a>
+                <a href="#skills" class="mobile-nav-link font-mono text-sm py-2.5 border-b border-zinc-100 dark:border-zinc-800/50 hover:text-cyber transition-colors">~/skills</a>
+                <a href="#projects" class="mobile-nav-link font-mono text-sm py-2.5 border-b border-zinc-100 dark:border-zinc-800/50 hover:text-cyber transition-colors">~/projects</a>
+                <a href="#education" class="mobile-nav-link font-mono text-sm py-2.5 border-b border-zinc-100 dark:border-zinc-800/50 hover:text-cyber transition-colors">~/education</a>
+                <a href="#contact" class="mobile-nav-link font-mono text-sm py-2.5 border-b border-zinc-100 dark:border-zinc-800/50 hover:text-cyber transition-colors">~/contact</a>
+                <a href="assets/Nitin_Negi_Resume.pdf" target="_blank" class="mt-2 w-full py-3 bg-cyber text-terminal font-mono font-bold text-sm rounded-xl text-center block">
+                    <i class="fa-solid fa-file-shield mr-1"></i> View Resume
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile drawer backdrop -->
+    <div id="drawer-backdrop" class="fixed inset-0 z-40 bg-black/50 hidden"></div>
+
+    <!-- ══════════ HERO SECTION ══════════ -->
+    <section id="home" class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden scan-lines">
+        <!-- Three.js Canvas -->
+        <canvas id="hero-canvas"></canvas>
+
+        <!-- Floating blobs -->
+        <div class="absolute top-1/4 left-10 w-72 h-72 bg-cyber/5 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute bottom-1/4 right-10 w-96 h-96 bg-cyber/5 rounded-full blur-3xl animate-float" style="animation-delay:2s;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Text -->
+                <div class="lg:col-span-7 text-center lg:text-left reveal">
+                    <!-- Status Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyber/10 border border-cyber/20 text-cyber font-mono font-medium text-xs tracking-wide uppercase mb-6">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyber opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-cyber"></span>
+                        </span>
+                        Open to Cybersecurity Internships
+                    </div>
+
+                    <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-5">
+                        Hi, I am <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber to-cyber-dark glitch" data-text="Nitin Negi">Nitin Negi</span>
+                    </h1>
+
+                    <h2 class="text-xl sm:text-2xl lg:text-3xl font-semibold text-zinc-700 dark:text-zinc-300 mb-6 h-[1.5em]">
+                        <span id="typewriter-text"></span><span class="typewriter-cursor"></span>
+                    </h2>
+
+                    <p class="text-zinc-600 dark:text-zinc-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+                        BCA student at MIET Kumaon with a deep passion for cybersecurity. Skilled in network security fundamentals, penetration testing concepts, vulnerability analysis, and secure coding practices. Dedicated to protecting digital infrastructure and building resilient systems.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                        <a href="assets/Nitin_Negi_Resume.pdf" target="_blank" class="px-7 py-3.5 bg-cyber text-terminal font-bold rounded-2xl shadow-lg shadow-cyber/25 hover:shadow-cyber/40 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 font-mono text-sm">
+                            <i class="fa-solid fa-file-shield"></i> View Resume
+                        </a>
+                        <a href="#contact" class="px-7 py-3.5 bg-white dark:bg-surface border-2 border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white font-semibold rounded-2xl hover:border-cyber dark:hover:border-cyber hover:text-cyber transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 text-sm">
+                            Contact Me <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Jugunu1101" target="_blank" rel="noopener noreferrer" class="p-3.5 bg-white dark:bg-surface border-2 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:text-cyber hover:border-cyber rounded-2xl transition-all duration-300" title="GitHub">
+                            <i class="fa-brands fa-github text-lg"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/nitin-negi-123a4b339" target="_blank" rel="noopener noreferrer" class="p-3.5 bg-white dark:bg-surface border-2 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:text-cyber hover:border-cyber rounded-2xl transition-all duration-300" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Cyber Card -->
+                <div class="lg:col-span-5 flex justify-center reveal" style="transition-delay:200ms;">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute inset-0 bg-cyber/20 rounded-3xl blur-2xl"></div>
+                        <div class="relative bg-white dark:bg-surface border border-zinc-200 dark:border-zinc-700/60 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6 tilt-card">
+                            <!-- Card Header -->
+                            <div class="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 pb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-cyber/10 flex items-center justify-center text-cyber text-lg">
+                                        <i class="fa-solid fa-shield-halved"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-heading font-bold text-sm">Security Dashboard</h4>
+                                        <p class="text-xs text-zinc-500 font-mono">system_status.sh</p>
+                                    </div>
+                                </div>
+                                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-cyber/10 text-cyber font-mono">SECURE</span>
+                            </div>
+
+                            <!-- Stats Grid -->
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="p-4 rounded-2xl bg-zinc-50 dark:bg-terminal border border-zinc-200 dark:border-zinc-800">
+                                    <p class="text-xs text-zinc-500 uppercase font-semibold font-mono">Projects</p>
+                                    <p class="text-2xl font-heading font-extrabold text-cyber mt-1" data-count="5">0</p>
+                                    <p class="text-[11px] text-zinc-400 mt-0.5">Completed</p>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-zinc-50 dark:bg-terminal border border-zinc-200 dark:border-zinc-800">
+                                    <p class="text-xs text-zinc-500 uppercase font-semibold font-mono">Certs</p>
+                                    <p class="text-2xl font-heading font-extrabold text-cyber mt-1" data-count="3">0</p>
+                                    <p class="text-[11px] text-zinc-400 mt-0.5">Earned</p>
+                                </div>
+                            </div>
+
+                            <!-- Toolkit Tags -->
+                            <div>
+                                <p class="text-xs text-zinc-500 font-semibold uppercase tracking-wider mb-2.5 font-mono">Core Arsenal</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-zinc-100 dark:bg-terminal text-xs font-semibold rounded-lg border border-zinc-200 dark:border-zinc-800 font-mono">Python</span>
+                                    <span class="px-3 py-1 bg-zinc-100 dark:bg-terminal text-xs font-semibold rounded-lg border border-zinc-200 dark:border-zinc-800 font-mono">Kali Linux</span>
+                                    <span class="px-3 py-1 bg-zinc-100 dark:bg-terminal text-xs font-semibold rounded-lg border border-zinc-200 dark:border-zinc-800 font-mono">Wireshark</span>
+                                    <span class="px-3 py-1 bg-zinc-100 dark:bg-terminal text-xs font-semibold rounded-lg border border-zinc-200 dark:border-zinc-800 font-mono">Nmap</span>
+                                    <span class="px-3 py-1 bg-zinc-100 dark:bg-terminal text-xs font-semibold rounded-lg border border-zinc-200 dark:border-zinc-800 font-mono">Burp Suite</span>
+                                </div>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="pt-3 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between text-xs text-zinc-500 font-mono">
+                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-cyber"></i> BCA — MIET Kumaon</span>
+                                <span class="font-bold text-cyber">2024–2027</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ ABOUT SECTION ══════════ -->
+    <section id="about" class="py-20 relative scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="mb-14 reveal">
+                <h3 class="text-cyber font-bold text-sm uppercase tracking-widest mb-2 font-mono">// Profile</h3>
+                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold tracking-tight">About Me.</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8" id="about-container">
+                <!-- Content will be injected by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ SKILLS SECTION ══════════ -->
+    <section id="skills" class="py-20 bg-white dark:bg-terminal border-y border-zinc-200 dark:border-zinc-800/50 scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-14 reveal">
+                <h3 class="text-cyber font-bold text-sm uppercase tracking-widest mb-2 font-mono">// Expertise</h3>
+                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold tracking-tight">Technical Arsenal.</h2>
+            </div>
+
+            <!-- Skill Categories Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="skills-container">
+                <!-- Content will be injected by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ PROJECTS SECTION ══════════ -->
+    <section id="projects" class="py-20 relative scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6 reveal">
+                <div>
+                    <h3 class="text-cyber font-bold text-sm uppercase tracking-widest mb-2 font-mono">// Featured Work</h3>
+                    <h2 class="font-heading text-3xl sm:text-5xl font-extrabold tracking-tight">Cybersecurity Projects.</h2>
+                </div>
+                <p class="text-zinc-500 dark:text-zinc-400 max-w-md">Hands-on security tools, vulnerability scanners, and defensive solutions built from scratch.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                <!-- Projects injected by JS from JSON data -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ EDUCATION & CERTIFICATIONS ══════════ -->
+    <section id="education" class="py-20 bg-white dark:bg-terminal border-y border-zinc-200 dark:border-zinc-800/50 scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-14 reveal">
+                <h3 class="text-cyber font-bold text-sm uppercase tracking-widest mb-2 font-mono">// Qualifications</h3>
+                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold tracking-tight">Education & Credentials.</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12" id="education-container">
+                <!-- Content will be injected by script.js -->
+            </div>
+
+            <div id="certifications-container" class="max-w-6xl mx-auto">
+                <!-- Certifications injected by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ CONTACT SECTION ══════════ -->
+    <section id="contact" class="py-20 relative overflow-hidden scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <h3 class="text-cyber font-bold text-sm uppercase tracking-widest mb-2 font-mono">// Get In Touch</h3>
+                    <h2 class="font-heading text-3xl sm:text-5xl font-extrabold tracking-tight mb-5">Let's talk security.</h2>
+                    <p class="text-zinc-600 dark:text-zinc-400 text-base sm:text-lg mb-8 max-w-md">
+                        I'm actively seeking cybersecurity internships and entry-level security roles. Feel free to connect — let's discuss how I can contribute to your security team!
+                    </p>
+
+                    <div class="space-y-4">
+                        <a href="mailto:nitinnegi7505@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-surface border border-zinc-200 dark:border-zinc-700/60 hover:border-cyber transition-all">
+                            <div class="w-11 h-11 rounded-xl bg-cyber/10 text-cyber flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-zinc-500 font-medium font-mono">Email</p>
+                                <p class="font-bold text-sm sm:text-base">nitinnegi7505@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/nitin-negi-123a4b339" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-surface border border-zinc-200 dark:border-zinc-700/60 hover:border-cyber transition-all">
+                            <div class="w-11 h-11 rounded-xl bg-cyber/10 text-cyber flex items-center justify-center text-lg">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-zinc-500 font-medium font-mono">LinkedIn</p>
+                                <p class="font-bold text-sm sm:text-base">linkedin.com/in/nitin-negi-123a4b339</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Jugunu1101" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-surface border border-zinc-200 dark:border-zinc-700/60 hover:border-cyber transition-all">
+                            <div class="w-11 h-11 rounded-xl bg-cyber/10 text-cyber flex items-center justify-center text-lg">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-zinc-500 font-medium font-mono">GitHub</p>
+                                <p class="font-bold text-sm sm:text-base">github.com/Jugunu1101</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white dark:bg-surface rounded-[2.5rem] p-6 sm:p-10 border border-zinc-200 dark:border-zinc-700/60 shadow-xl reveal" style="transition-delay:150ms;">
+                    <form id="contact-form" class="space-y-4" novalidate>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-xs font-bold text-zinc-600 dark:text-zinc-400 uppercase tracking-wider block mb-1.5 font-mono">Your Name</label>
+                                <input type="text" name="name" placeholder="John Doe" required class="w-full px-4 py-3.5 rounded-xl bg-zinc-50 dark:bg-terminal border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:border-cyber transition-all text-sm">
+                                <p class="form-error text-red-500 text-xs mt-1 hidden"></p>
+                            </div>
+                            <div>
+                                <label class="text-xs font-bold text-zinc-600 dark:text-zinc-400 uppercase tracking-wider block mb-1.5 font-mono">Email Address</label>
+                                <input type="email" name="email" placeholder="john@example.com" required class="w-full px-4 py-3.5 rounded-xl bg-zinc-50 dark:bg-terminal border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:border-cyber transition-all text-sm">
+                                <p class="form-error text-red-500 text-xs mt-1 hidden"></p>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-zinc-600 dark:text-zinc-400 uppercase tracking-wider block mb-1.5 font-mono">Subject</label>
+                            <input type="text" name="subject" placeholder="Cybersecurity Internship Opportunity" required class="w-full px-4 py-3.5 rounded-xl bg-zinc-50 dark:bg-terminal border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:border-cyber transition-all text-sm">
+                            <p class="form-error text-red-500 text-xs mt-1 hidden"></p>
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-zinc-600 dark:text-zinc-400 uppercase tracking-wider block mb-1.5 font-mono">Message</label>
+                            <textarea name="message" placeholder="Hi Nitin, we would love to connect..." rows="4" required class="w-full px-4 py-3.5 rounded-xl bg-zinc-50 dark:bg-terminal border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:border-cyber transition-all text-sm resize-none"></textarea>
+                            <p class="form-error text-red-500 text-xs mt-1 hidden"></p>
+                        </div>
+                        <button type="submit" id="submit-btn" class="w-full py-4 bg-cyber text-terminal font-bold rounded-xl hover:bg-cyber-dark transition-all shadow-lg shadow-cyber/20 flex items-center justify-center gap-2 font-mono">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        <div id="form-success" class="hidden p-4 rounded-xl bg-cyber/10 border border-cyber/20 text-center">
+                            <p class="text-cyber font-mono text-sm font-bold"><i class="fa-solid fa-check-circle mr-1"></i> Message sent successfully!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ FOOTER ══════════ -->
+    <footer class="bg-white dark:bg-surface border-t border-zinc-200 dark:border-zinc-800/50 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2.5">
+                <div class="w-7 h-7 rounded-lg bg-cyber text-terminal flex items-center justify-center text-xs font-bold font-mono">NN</div>
+                <span class="font-heading font-extrabold text-base">Nitin Negi<span class="text-cyber">.</span></span>
+            </div>
+            <p class="text-zinc-500 text-xs text-center md:text-left font-mono">
+                &copy; <span id="year"></span> Nitin Negi. All rights reserved.
+            </p>
+            <div class="flex items-center gap-3">
+                <a href="https://github.com/Jugunu1101" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-zinc-100 dark:bg-terminal border border-zinc-200 dark:border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-cyber hover:border-cyber transition-colors">
+                    <i class="fa-brands fa-github text-sm"></i>
+                </a>
+                <a href="https://linkedin.com/in/nitin-negi-123a4b339" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-zinc-100 dark:bg-terminal border border-zinc-200 dark:border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-cyber hover:border-cyber transition-colors">
+                    <i class="fa-brands fa-linkedin-in text-sm"></i>
+                </a>
+                <a href="mailto:nitinnegi7505@gmail.com" class="w-9 h-9 rounded-xl bg-zinc-100 dark:bg-terminal border border-zinc-200 dark:border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-cyber hover:border-cyber transition-colors">
+                    <i class="fa-solid fa-envelope text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ══════════ RESUME MODAL ══════════ -->
+    <div id="resume-modal" class="fixed inset-0 z-[999] hidden items-center justify-center p-3 sm:p-6 bg-black/70 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+        <div class="relative w-full max-w-4xl max-h-[92vh] bg-white dark:bg-surface rounded-3xl border border-zinc-200 dark:border-zinc-700/60 shadow-2xl flex flex-col overflow-hidden">
+            <!-- Modal Header -->
+            <div class="p-4 sm:p-5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between bg-zinc-50/80 dark:bg-terminal/80">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-xl bg-cyber/10 text-cyber flex items-center justify-center">
+                        <i class="fa-solid fa-file-shield"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-sm sm:text-base">Nitin Negi — Resume</h3>
+                        <p class="text-[11px] text-zinc-500 font-mono">Cybersecurity Enthusiast | BCA Student</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button id="print-resume-btn" class="px-3 py-1.5 bg-cyber text-terminal text-xs font-semibold rounded-xl hover:bg-cyber-dark transition-all flex items-center gap-1.5 shadow-sm font-mono">
+                        <i class="fa-solid fa-download"></i> <span class="hidden sm:inline">Download PDF</span>
+                    </button>
+                    <button id="close-resume-btn" class="w-8 h-8 rounded-xl bg-zinc-100 dark:bg-terminal hover:bg-zinc-200 dark:hover:bg-zinc-800 flex items-center justify-center text-zinc-500 transition-colors" aria-label="Close modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="flex-1 overflow-y-auto p-5 sm:p-8 space-y-6 text-zinc-900 dark:text-zinc-100" id="resume-printable">
+                <!-- Header -->
+                <div class="text-center border-b border-zinc-200 dark:border-zinc-800 pb-5">
+                    <h1 class="text-2xl sm:text-3xl font-heading font-extrabold tracking-tight">Nitin Negi</h1>
+                    <p class="text-sm font-semibold text-cyber mt-0.5 font-mono">Cybersecurity Enthusiast | BCA Student</p>
+                    <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-1 text-xs text-zinc-500 mt-2 font-mono">
+                        <span><i class="fa-solid fa-location-dot text-cyber mr-1"></i> India</span>
+                        <span><i class="fa-solid fa-envelope text-cyber mr-1"></i> nitinnegi7505@gmail.com</span>
+                        <span><i class="fa-brands fa-linkedin text-cyber mr-1"></i> nitin-negi-123a4b339</span>
+                        <span><i class="fa-brands fa-github text-cyber mr-1"></i> github.com/nitinnegi</span>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div>
+                    <h2 class="text-xs font-heading font-extrabold uppercase tracking-wider text-cyber border-b border-cyber/30 pb-1 mb-2">Professional Summary</h2>
+                    <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                        Cybersecurity Enthusiast and BCA student at MIET Kumaon with hands-on experience in network security, vulnerability assessment, and penetration testing concepts. Proficient in Python scripting for security automation, packet analysis with Wireshark, and network reconnaissance with Nmap. Passionate about ethical hacking and building tools that strengthen digital defenses. Eager to contribute strong analytical skills and security knowledge in an entry-level cybersecurity role.
+                    </p>
+                </div>
+
+                <!-- Skills -->
+                <div>
+                    <h2 class="text-xs font-heading font-extrabold uppercase tracking-wider text-cyber border-b border-cyber/30 pb-1 mb-2">Technical Skills</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+                        <div><strong class="text-zinc-900 dark:text-zinc-100">Cybersecurity:</strong> Network Security, Vulnerability Assessment, Penetration Testing, OWASP Top 10</div>
+                        <div><strong class="text-zinc-900 dark:text-zinc-100">Programming:</strong> Python, C, Bash/Shell Scripting, HTML/CSS/JavaScript</div>
+                        <div><strong class="text-zinc-900 dark:text-zinc-100">Security Tools:</strong> Wireshark, Nmap, Burp Suite, Metasploit, John the Ripper, Hashcat</div>
+                        <div><strong class="text-zinc-900 dark:text-zinc-100">Networking:</strong> TCP/IP, DNS, DHCP, Firewalls, VPN, Subnetting</div>
+                        <div class="sm:col-span-2"><strong class="text-zinc-900 dark:text-zinc-100">Platforms & Tools:</strong> Kali Linux, Ubuntu, Windows, Git, GitHub, VS Code</div>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div>
+                    <h2 class="text-xs font-heading font-extrabold uppercase tracking-wider text-cyber border-b border-cyber/30 pb-1 mb-3">Cybersecurity Projects</h2>
+                    <div class="space-y-4 text-xs sm:text-sm" id="resume-projects">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div>
+                    <h2 class="text-xs font-heading font-extrabold uppercase tracking-wider text-cyber border-b border-cyber/30 pb-1 mb-2">Education</h2>
+                    <div class="flex flex-col sm:flex-row justify-between text-xs sm:text-sm">
+                        <div>
+                            <p class="font-bold">Bachelor of Computer Applications (BCA)</p>
+                            <p class="text-zinc-500">MIET Kumaon, Kumaon University</p>
+                        </div>
+                        <div class="sm:text-right mt-1 sm:mt-0 text-zinc-500 font-mono">
+                            <p>Aug 2024 – June 2027</p>
+                            <p class="font-semibold text-cyber">Pursuing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certs -->
+                <div>
+                    <h2 class="text-xs font-heading font-extrabold uppercase tracking-wider text-cyber border-b border-cyber/30 pb-1 mb-2">Certifications</h2>
+                    <ul class="list-disc list-inside space-y-1 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+                        <li><strong>Cybersecurity Fundamentals:</strong> Introduction to Cybersecurity — Cisco Networking Academy</li>
+                        <li><strong>Python Programming:</strong> Certified — Scripting & Security Automation</li>
+                        <li><strong>Networking Basics:</strong> Introduction to Networking — Cisco Networking Academy</li>
+                    </ul>
+                </div>
+
+                <!-- Core Competencies -->
+                <div>
+                    <h2 class="text-xs font-heading font-extrabold uppercase tracking-wider text-cyber border-b border-cyber/30 pb-1 mb-2">Core Competencies</h2>
+                    <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+                        Network Security • Ethical Hacking • Threat Analysis • Problem Solving • Critical Thinking • Continuous Learning • Team Collaboration
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════ IMAGE MODAL ══════════ -->
+    <div id="image-modal" class="fixed inset-0 z-[1000] hidden items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md opacity-0 transition-opacity duration-300 select-none">
+        <div class="relative max-w-[95vw] max-h-[95vh] flex flex-col items-center justify-center">
+            <!-- Close Button -->
+            <button onclick="closeImageModal()" class="absolute -top-10 right-0 sm:-top-12 sm:right-0 w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition-all z-20 shadow-lg cursor-pointer" aria-label="Close image">
+                <i class="fa-solid fa-xmark text-lg sm:text-xl"></i>
+            </button>
+            <!-- Image Container -->
+            <img id="modal-image" src="" alt="Expanded Image" class="max-w-full max-h-[78vh] sm:max-h-[82vh] w-auto h-auto object-contain rounded-xl shadow-2xl cursor-pointer">
+            <!-- Optional Title -->
+            <p id="modal-image-title" class="mt-2 text-white font-heading text-sm sm:text-base font-bold text-center drop-shadow-sm px-4 max-w-full truncate"></p>
+            <!-- Hint badge -->
+            <span class="text-[11px] text-zinc-400 font-mono mt-1 opacity-80">Double-click or press ESC to exit</span>
+        </div>
+    </div>
+
+    <!-- App Scripts -->
+    <script src="script.js?v=2.2"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

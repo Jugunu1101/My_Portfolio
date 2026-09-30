@@ -1,0 +1,30 @@
+[
+  {
+    "category": "Security Tools",
+    "icon": "fa-solid fa-shield-halved",
+    "items": [
+      { "name": "Nmap", "proficiency": 75 },
+      { "name": "Wireshark", "proficiency": 70 },
+      { "name": "Burp Suite", "proficiency": 65 },
+      { "name": "Hydra & John the Ripper", "proficiency": 70 }
+    ]
+  },
+  {
+    "category": "Programming & Core CS",
+    "icon": "fa-solid fa-code",
+    "items": [
+      { "name": "Python", "proficiency": 80 },
+      { "name": "C++", "proficiency": 65 },
+      { "name": "Java", "proficiency": 60 },
+      { "name": "Data Structures", "proficiency": 65 }
+    ]
+  },
+  {
+    "category": "Networking",
+    "icon": "fa-solid fa-network-wired",
+    "items": [
+      { "name": "TCP/IP & Ports", "proficiency": 75 },
+      { "name": "Protocol Analysis", "proficiency": 70 }
+    ]
+  }
+]

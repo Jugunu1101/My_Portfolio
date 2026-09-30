@@ -1,0 +1,12 @@
+{
+  "title": "About Me.",
+  "bioParagraph1": "I'm deeply passionate about cybersecurity — from understanding how systems get compromised to building defenses that keep digital infrastructure safe. My journey started with curiosity about how networks work, and it quickly evolved into a focused pursuit of ethical hacking and security analysis.",
+  "bioParagraph2": "Whether it's performing network reconnaissance with Nmap, analyzing packets with Wireshark, finding web application vulnerabilities, or scripting automation tools in Python, I'm constantly sharpening my skills through hands-on labs and real-world projects.",
+  "stats": [
+    { "label": "Projects", "count": 3 },
+    { "label": "Certifications", "count": 4 }
+  ],
+  "keywords": [
+    "Network Security", "Ethical Hacking", "Problem Solving", "Critical Thinking", "Continuous Learning"
+  ]
+}

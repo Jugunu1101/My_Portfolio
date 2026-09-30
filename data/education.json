@@ -1,0 +1,18 @@
+[
+  {
+    "degree": "Bachelor of Computer Applications (BCA)",
+    "school": "MIET Kumaon, Kumaon University",
+    "location": "Haldwani, Uttarakhand",
+    "period": "Aug 2024 – June 2027",
+    "status": "Pursuing",
+    "isActive": true
+  },
+  {
+    "degree": "12th Grade – PCM",
+    "school": "GIC Kalron",
+    "location": "Almora, Uttarakhand",
+    "period": "Completed",
+    "status": "Passed",
+    "isActive": false
+  }
+]

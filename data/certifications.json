@@ -1,0 +1,52 @@
+[
+  {
+    "name": "HackIndia Spark 10 (Certificate of Participation)",
+    "issuer": "HackIndia",
+    "image": "assets/images/cert_hackindia_spark10.jpg"
+  },
+  {
+    "name": "AWS Academy Cloud Foundations",
+    "issuer": "AWS Academy",
+    "image": "assets/images/cert_aws.jpeg"
+  },
+  {
+    "name": "Google AI Essentials",
+    "issuer": "Coursera & Google",
+    "image": "assets/images/cert_google_ai.jpg"
+  },
+  {
+    "name": "Cybersecurity Job Simulation",
+    "issuer": "Forage & Mastercard",
+    "image": "assets/images/cert_forage_mastercard.jpg"
+  },
+  {
+    "name": "CyberOps Associate",
+    "issuer": "NIIT Foundation",
+    "image": "assets/images/cert_cyberops.jpg"
+  },
+  {
+    "name": "Introduction to Cryptography for Beginners",
+    "issuer": "Simplilearn",
+    "image": "assets/images/cert_simplilearn_crypto.jpg"
+  },
+  {
+    "name": "Introduction to Cybersecurity",
+    "issuer": "Cisco Networking Academy",
+    "image": "assets/images/cert_intro_cyber_v2.jpg"
+  },
+  {
+    "name": "Networking Basics",
+    "issuer": "Cisco Networking Academy",
+    "image": "assets/images/cert_networking_basics.jpg"
+  },
+  {
+    "name": "Python Essentials 1",
+    "issuer": "Python Institute & Cisco",
+    "image": "assets/images/cert_python_essentials.jpg"
+  },
+  {
+    "name": "LeetCode Profile & Stats",
+    "issuer": "LeetCode",
+    "image": "assets/images/leetcode_stats.jpg"
+  }
+]
